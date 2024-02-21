@@ -404,6 +404,24 @@ i.fa-solid.fa-square, #five{
     justify-content: space-around;
 }
 
+/* Mobile styles for how we spend your donations */
+@media screen and (max-width: 600px) {
+    .donations {
+        text-align: center;
+    }
+
+    .icons {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .piechart {
+        margin: 20px auto;
+        width: 180px;
+        height: 180px;
+    }
+}
+
 .join-us {
     display: flex;
     height: 622px;
@@ -466,6 +484,42 @@ i.fa-solid.fa-square, #five{
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    .join-us {
+        height: 250px;
+        padding: 20px;
+    }
+
+    .join-text {
+        font-size: 0.95rem;
+    }
+    .join-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .join-join {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .join-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .join-button{
+        margin: 10px;
+    }
+    /* .join-button,
+    .donate-button {
+        width: 100%;
+    } */
+}
 
 .events {
     margin-left: 120px;
@@ -498,12 +552,44 @@ i.fa-solid.fa-square, #five{
 }
 
 @media screen and (max-width: 600px) {
-.column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+    .events{
+        margin-left: 10px; /* Adjust margins for smaller screens */
+        margin-right: 10px;
+        /* width: 100vw; */
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .card {
+        height: auto;
+        width: 100%;
+    }
+
+    .card-items {
+        padding: 10px;
+    }
+    .event-line > p {
+        font-size: 0.5rem; /* Adjust the font size as needed */
+    }
+
+    .card-items > h3 {
+        font-size: 0.85rem; /* Adjust the font size as needed */
+    
+    }
+
+    .b-arrow {
+        max-width: 50px; /* Set a maximum width for the arrow button */
+    }
 }
-}
+
 
 .card {
     display: flex;
@@ -515,16 +601,69 @@ i.fa-solid.fa-square, #five{
     border-radius: 20px;
 }
 
-.number {
+.mo-no{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-items {
+    text-align: left;
+    margin: 5px;
+    padding: 25px;
+}
+
+.card-items .event-line > p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+h2.number {
+   
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    justify-self: center;
+    text-align: center;
+}
+
+h3.month {
+    margin: 0;
+    padding: 0;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1E1E1E;
+    color: #000000;
 }
 .b-arrow {
     border: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+.arrow-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;
+}
+
+.event-line > hr{
+    
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    border: #000 ;
+    margin: 10px;
 }
 
 /* Footer styles */
