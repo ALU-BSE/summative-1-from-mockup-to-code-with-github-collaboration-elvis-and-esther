@@ -168,7 +168,7 @@ body {
 /* About section styles */
 .about-section {
     max-width: 1321px;
-    height: 678px;
+    height: auto; 
     margin: 20px auto; 
     background-color: #FFFFFF; 
     color: #1E1E1E; 
@@ -190,20 +190,22 @@ body {
     font-weight: bold; 
 }
 
-/* About content styles */
 .about-content {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; 
     justify-content: space-between;
 }
 
 .top-row-content {
-    width: 50%; 
+    width: 100%; 
+    max-width: 600px;
+    margin-bottom: 20px; 
 }
 
 .about-text {
     font-size: 16px; 
 }
+
 /* Get Involved button styles */
 .get-involved-button {
     padding: 10px 20px;
@@ -218,8 +220,9 @@ body {
 }
 
 .about-image img {
-    width: 600px; 
-    height: 435px; 
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
 }
 
 /* Bottom row section styles */
@@ -228,6 +231,7 @@ body {
     align-items: center;
     margin-top: 20px;
 }
+
 /* bottom row styles */
 .bottom-row-text {
     font-size: 16px;
@@ -237,7 +241,8 @@ body {
 }
 
 .line-1 {
-    width: 1094px;
+    width: 100%; 
+    max-width: 1094px; 
     height: 1px;
     background-color: #E5E5E5;
 }
@@ -249,37 +254,33 @@ body {
     margin-top: 20px;
 }
 
-.supporter-logo {
-    width: 223px; 
-    height: 67px; 
-    margin-right: 100px; /* Add space between logos */
-}
-/* Supporter logos styles */
-.supporter-logos {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .supporter-item {
     display: flex;
     align-items: center;
+    margin-right: 20px; 
+}
+
+.supporter-logo {
+    width: 100%; 
+    max-width: 223px; 
+    height: auto; 
 }
 
 .supporter-text {
     font-size: 20px;
     font-weight: medium;
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-left: 10px;
 }
 
-/* Adjust margin for the first and last logos */
 .supporter-logo:first-child {
-    margin-right: 50px; /* Position the first logo about 50px from the left */
+    margin-right: 20px; 
 }
 
 .supporter-logo:last-child {
-    margin-right: 0; /* Position the last logo at the rightmost position */
+    margin-right: 0; 
 }
+
+
 
 
 /* Team section styles */
@@ -572,7 +573,7 @@ i.fa-solid.fa-square, #five{
     padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
+
 .row {
     display: flex;
     flex-direction: row;
@@ -588,7 +589,7 @@ i.fa-solid.fa-square, #five{
 
 @media screen and (max-width: 600px) {
     .events{
-        margin-left: 10px; /* Adjust margins for smaller screens */
+        margin-left: 10px; 
         margin-right: 10px;
         /* width: 100vw; */
     }
@@ -599,8 +600,8 @@ i.fa-solid.fa-square, #five{
     }
 
     .row {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .card {
@@ -612,16 +613,16 @@ i.fa-solid.fa-square, #five{
         padding: 10px;
     }
     .event-line > p {
-        font-size: 0.5rem; /* Adjust the font size as needed */
+        font-size: 0.5rem; 
     }
 
     .card-items > h3 {
-        font-size: 0.85rem; /* Adjust the font size as needed */
+        font-size: 0.85rem;
     
     }
 
     .b-arrow {
-        max-width: 50px; /* Set a maximum width for the arrow button */
+        max-width: 50px; 
     }
 }
 
@@ -787,4 +788,3 @@ h3.month {
     cursor: pointer;
     border-radius: 5px;
 }
-
