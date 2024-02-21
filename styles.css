@@ -403,9 +403,65 @@ i.fa-solid.fa-square, #five{
     flex-direction: row;
     justify-content: space-around;
 }
-/* body, 
-.piechart { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}  */
+
+.join-us {
+    display: flex;
+    height: 622px;
+    width: 80vw;
+    justify-content: center;
+    margin: auto;
+    border-radius: 4%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('images/chess_3.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.join-content {
+    display: flex;
+    width: 640px;
+    height: 330px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.join-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.join-text {
+    font-size: 48px;
+    color: #FFF;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.join-button {
+    padding: 10px 20px;
+    background-color: #FFB703;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #FF9900;
+}
+
+.donate-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
