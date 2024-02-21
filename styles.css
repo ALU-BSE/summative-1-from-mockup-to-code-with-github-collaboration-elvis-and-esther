@@ -558,6 +558,27 @@ i.fa-solid.fa-square, #five{
     margin-top: 10px;
 }
 
+/* Footer styles */
+.footer-center {
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-center a {
+    display: inline-block; 
+    width: 35px; 
+    height: 30px; 
+}
+
+.footer-center img {
+    width: 100%; 
+    height: auto; 
+}
+
+
 .footer-right {
     width: 530px;
     height: 200px;
