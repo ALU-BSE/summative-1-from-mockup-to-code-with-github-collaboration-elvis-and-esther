@@ -1,4 +1,8 @@
 /* Global styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -52,10 +56,15 @@ body {
     background-color: #333;
 }
 
+.brand-name > p {
+    font-size: 0.95rem;
+
+}
 /* Header styles */
 .header {
     height: 735px;
-    background-image: url('images/chess_1.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('images/chess_1.png');
     background-size: cover;
     background-position: center;
     border-top: 1px solid #ccc;
@@ -141,6 +150,7 @@ body {
 }
 
 .top-row-text {
+    display: flex;
     font-size: 24px; 
     font-weight: bold; 
 }
@@ -300,6 +310,8 @@ body {
 
 /* Member name styles */
 .member-name {
+    padding: 0px;
+    margin: 0px;
     font-size: 18px; 
     font-weight: bold;
 }
@@ -308,4 +320,14 @@ body {
 .member-role {
     font-size: 14px; 
     color: #888;
+}
+
+.member {
+    padding: 0px;
+    margin: 0px;
+}
+
+.role {
+    padding: 0px;
+    margin: 0px;
 }
