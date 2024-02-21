@@ -18,6 +18,11 @@ body {
     padding: 0 20px;
 }
 
+.navbar .left {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+}
+
 .navbar .left img {
     width: 50px;
     height: auto;
@@ -27,6 +32,7 @@ body {
 .navbar .left .brand-name {
     font-size: 24px;
 }
+
 
 .navbar .middle a {
     margin-right: 20px;
@@ -153,6 +159,18 @@ body {
 .about-text {
     font-size: 16px; 
 }
+/* Get Involved button styles */
+.get-involved-button {
+    padding: 10px 20px;
+    background-color: #FFB703;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.get-involved-button:hover {
+    background-color: #FF9900;
+}
 
 .about-image img {
     width: 600px; 
@@ -165,7 +183,7 @@ body {
     align-items: center;
     margin-top: 20px;
 }
-
+/* bottom row styles */
 .bottom-row-text {
     font-size: 16px;
     font-weight: medium;
@@ -189,8 +207,35 @@ body {
 .supporter-logo {
     width: 223px; 
     height: 67px; 
-    margin-right: 20px; 
+    margin-right: 100px; /* Add space between logos */
 }
+/* Supporter logos styles */
+.supporter-logos {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.supporter-item {
+    display: flex;
+    align-items: center;
+}
+
+.supporter-text {
+    font-size: 20px;
+    font-weight: medium;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+/* Adjust margin for the first and last logos */
+.supporter-logo:first-child {
+    margin-right: 50px; /* Position the first logo about 50px from the left */
+}
+
+.supporter-logo:last-child {
+    margin-right: 0; /* Position the last logo at the rightmost position */
+}
+
 
 /* Team section styles */
 .team-section {
@@ -224,11 +269,10 @@ body {
 }
 
 /* Team members styles */
-/* Team members group styles */
 .team-members {
     width: 1285px;
     height: 433px;
-    margin: 20px auto; /* Center the group horizontally with a 20px margin */
+    margin: 20px auto; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -246,8 +290,8 @@ body {
 
 /* Member image styles */
 .member-image {
-    width: 200px; /* Adjust width */
-    height: 200px; /* Adjust height */
+    width: 200px; 
+    height: 250px; 
     object-fit: cover;
     border: 2px solid #000; 
     border-radius: 10px; 
@@ -256,12 +300,12 @@ body {
 
 /* Member name styles */
 .member-name {
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px; 
     font-weight: bold;
 }
 
 /* Member role styles */
 .member-role {
-    font-size: 14px; /* Adjust font size */
+    font-size: 14px; 
     color: #888;
 }
