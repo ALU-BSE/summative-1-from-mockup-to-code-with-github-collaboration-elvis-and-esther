@@ -466,6 +466,7 @@ i.fa-solid.fa-square, #five{
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .events {
     margin-left: 120px;
     margin-left: 120px;
@@ -519,3 +520,71 @@ i.fa-solid.fa-square, #five{
     width: 50px;
     height: 50px;
 }
+=======
+/* Footer styles */
+.footer {
+    width: 1400px;
+    height: 395px;
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.website-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px; 
+    margin-left: 20px;
+}
+
+.footer-logo {
+    width: 190px;
+    height: 190px;
+    margin-top: 10px;
+}
+
+.footer-right {
+    width: 530px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscribe-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+.subscribe-form {
+    margin-top: 20px;
+}
+
+.email-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #FFB703;
+    color: 1D2130;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+>>>>>>> 7c723aca83c2d4b276bb5cca336ef1db05626171
