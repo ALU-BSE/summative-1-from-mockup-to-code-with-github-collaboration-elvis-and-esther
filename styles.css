@@ -479,7 +479,7 @@ i.fa-solid.fa-square, #five{
 
 .column {
     float: left;
-    width: 50%;
+    width: 45%;
     padding: 0 10px;
 }
 
@@ -512,8 +512,14 @@ i.fa-solid.fa-square, #five{
     padding: 16px;
     text-align: center;
     background-color: #8BE2FF;
+    border-radius: 20px;
 }
 
+.number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E1E1E;
+}
 .b-arrow {
     border: none;
     border-radius: 50%;
