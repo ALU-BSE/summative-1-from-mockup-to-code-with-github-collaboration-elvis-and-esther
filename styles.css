@@ -304,8 +304,7 @@ body {
 
 /* Team section styles */
 .team-section {
-    /* width: 573px;
-    height: 180px; */
+    max-width: 1285px;
     margin: 0 auto; 
     background-color: #FFFFFF; 
     color: #1D2130; 
@@ -348,16 +347,18 @@ body {
 /* Team member styles */
 .team-member {
     text-align: center;
-    width: 302px; /* Set width */
-    height: 400px; /* Set height */
+    width: 302px; 
+    height: 400px; 
     margin-bottom: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 
-/* Member image styles */
+
 .member-image {
-    width: 200px; 
-    height: 250px; 
+    width: 100%; 
+    height: auto; 
     object-fit: cover;
     border: 2px solid #000; 
     border-radius: 10px; 
@@ -386,7 +387,7 @@ body {
 .role {
     padding: 0px;
     margin: 0px;
-}
+} 
 
 .visualization {
     box-sizing: border-box;
