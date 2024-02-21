@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Set Roboto as the default font */
+    font-family: 'Roboto', sans-serif; 
 }
 
 /* Navbar styles */
@@ -119,11 +119,11 @@ body {
 .about-section {
     width: 1321px;
     height: 678px;
-    margin: 20px auto; /* Center the section horizontally with a 20px margin */
-    background-color: #FFFFFF; /* White background */
-    color: #1E1E1E; /* Text color */
-    padding: 20px; /* Add padding inside the section */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 20px auto; 
+    background-color: #FFFFFF; 
+    color: #1E1E1E; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 /* Top row section styles */
@@ -131,12 +131,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; /* Add space below the top row */
+    margin-bottom: 20px; 
 }
 
 .top-row-text {
-    font-size: 24px; /* Font size for the top row text */
-    font-weight: bold; /* Make the text bold */
+    font-size: 24px; 
+    font-weight: bold; 
 }
 
 /* About content styles */
@@ -147,16 +147,16 @@ body {
 }
 
 .top-row-content {
-    width: 50%; /* Set width for the top row content */
+    width: 50%; 
 }
 
 .about-text {
-    font-size: 16px; /* Font size for the main text */
+    font-size: 16px; 
 }
 
 .about-image img {
-    width: 600px; /* Set width for the image */
-    height: 435px; /* Set height for the image */
+    width: 600px; 
+    height: 435px; 
 }
 
 /* Bottom row section styles */
@@ -170,7 +170,7 @@ body {
     font-size: 16px;
     font-weight: medium;
     color: #1D2130;
-    margin-right: 20px; /* Add margin between text and line */
+    margin-right: 20px; 
 }
 
 .line-1 {
@@ -187,38 +187,41 @@ body {
 }
 
 .supporter-logo {
-    width: 223px; /* Adjusted width for niadelta.png */
-    height: 67px; /* Set height for consistency */
-    margin-right: 20px; /* Add margin between logos */
+    width: 223px; 
+    height: 67px; 
+    margin-right: 20px; 
 }
 
 /* Team section styles */
 .team-section {
-    width: 1285px;
-    margin: 20px auto; /* Center the section horizontally with automatic left and right margins */
-    background-color: #FFFFFF; /* White background */
-    color: #1D2130; /* Text color */
-    padding: 20px; /* Add padding inside the section */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 573px;
+    height: 180px;
+    margin: 0 auto; 
+    background-color: #FFFFFF; 
+    color: #1D2130; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center; 
 }
 
+/* Team title styles */
 .team-title {
-    width: 317px; /* Set width */
-    height: 60px; /* Set height */
-    margin: 0 auto 10px; /* Center align and add bottom margin */
-    font-size: 24px; /* Adjust font size */
-    font-weight: bold; /* Set font weight */
-    color: #1D2130; /* Text color */
+    width: 317px; 
+    height: 60px; 
+    margin: 0 auto 10px; 
+    font-size: 24px;
+    font-weight: bold; 
+    color: #1D2130; 
 }
 
+/* Team description styles */
 .team-description {
-    width: 573px; /* Set width */
-    height: 110px; /* Set height */
-    margin: 0 auto; /* Center align */
-    font-size: 16px; /* Adjust font size */
-    color: #525560; /* Text color */
+    width: 573px; 
+    height: 110px; 
+    margin: 0 auto; 
+    font-size: 16px; 
+    color: #525560; 
 }
-
 
 /* Team members styles */
 .team-members {
@@ -233,14 +236,14 @@ body {
     margin-bottom: 20px;
 }
 
+/* Team member image styles */
 .member-image {
-    width: 296px;
-    height: 321px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 2px solid #000; /* Add border */
     border-radius: 10px; /* Add border radius for rounded corners */
     margin-bottom: 10px;
-
 }
 
 .member-name {
