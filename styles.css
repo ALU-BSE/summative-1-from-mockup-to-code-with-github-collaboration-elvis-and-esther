@@ -132,7 +132,7 @@ body {
 
 /* About section styles */
 .about-section {
-    width: 1321px;
+    max-width: 1321px;
     height: 678px;
     margin: 20px auto; 
     background-color: #FFFFFF; 
@@ -249,8 +249,8 @@ body {
 
 /* Team section styles */
 .team-section {
-    width: 573px;
-    height: 180px;
+    /* width: 573px;
+    height: 180px; */
     margin: 0 auto; 
     background-color: #FFFFFF; 
     color: #1D2130; 
@@ -287,6 +287,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: calc((100% - 1285px) / 2);
+    margin-bottom: 10px;
 }
 
 /* Team member styles */
@@ -331,3 +332,80 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
+.visualization {
+    box-sizing: border-box;
+    max-width: 100%;
+    /* max-height: auto; */
+    margin: 20px auto; 
+    background-color: #8BE2FF; 
+    color: #1E1E1E; 
+    padding: 20px;
+}
+
+.donations {
+    text-align: left;
+    max-width: 1321px;
+    padding: 20px;
+    margin: auto;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+i.fa-solid.fa-square, #one{
+    color: #BEF3C0;
+}
+
+i.fa-solid.fa-square, #two{
+    color: #F9CF64;
+}
+
+i.fa-solid.fa-square, #three{
+    color: #AC94F1;
+}
+
+i.fa-solid.fa-square, #four{
+    color: #F38FBF;
+}
+
+i.fa-solid.fa-square, #five{
+    color: #FFF0CA;
+}
+
+.picons {
+    display: inline-block;
+}
+
+.piechart { 
+    /* margin-top: 20px;  */
+    /* display: block;  */
+    /* position: absolute;  */
+    background-position: center;
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    background-image: conic-gradient( 
+        #BEF3C0 0% 40%,  
+        #F9CF64 40% 50%,  
+        #AC94F1 50% 85%,
+        #F38FBF 85% 90%,
+        #FFF0CA 90% 100%); 
+} 
+
+.chart-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* body, 
+.piechart { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}  */
