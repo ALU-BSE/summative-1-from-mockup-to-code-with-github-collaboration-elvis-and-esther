@@ -1,14 +1,20 @@
 * {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    font-size: 0.95rem
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 0.95rem;
 }
 
 .form-head {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -65,17 +71,12 @@ input[type=submit] {
 }
   
 input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 20px;
+    background-color: #ffb803ba;
 }
 
 .submit {
     text-align: center;
+    margin-top: 8px;
 }
 .row:after {
     content: "";
