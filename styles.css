@@ -410,7 +410,7 @@ i.fa-solid.fa-square, #five{
     width: 80vw;
     justify-content: center;
     margin: auto;
-    border-radius: 4%;
+    border-radius: 2%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), url('images/chess_3.jpg');
     background-size: cover;
@@ -464,4 +464,58 @@ i.fa-solid.fa-square, #five{
     color: black;
     border: none;
     cursor: pointer;
+}
+
+.events {
+    margin-left: 120px;
+    margin-left: 120px;
+    padding: 20px;
+    
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+.card {
+    display: flex;
+    height: 191px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #8BE2FF;
+}
+
+.b-arrow {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
