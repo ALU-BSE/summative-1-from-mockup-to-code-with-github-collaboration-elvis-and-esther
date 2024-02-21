@@ -203,17 +203,22 @@ body {
 }
 
 .team-title {
-    font-size: 48px;
-    font-weight: bold;
-    color: #1D2130;
-    margin-bottom: 20px; /* Add space below title */
+    width: 317px; /* Set width */
+    height: 60px; /* Set height */
+    margin: 0 auto 10px; /* Center align and add bottom margin */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Set font weight */
+    color: #1D2130; /* Text color */
 }
 
 .team-description {
-    font-size: 16px;
-    font-weight: normal;
-    color: #525560;
+    width: 573px; /* Set width */
+    height: 110px; /* Set height */
+    margin: 0 auto; /* Center align */
+    font-size: 16px; /* Adjust font size */
+    color: #525560; /* Text color */
 }
+
 
 /* Team members styles */
 .team-members {
@@ -229,10 +234,13 @@ body {
 }
 
 .member-image {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
+    width: 296px;
+    height: 321px;
+    object-fit: cover;
+    border: 2px solid #000; /* Add border */
+    border-radius: 10px; /* Add border radius for rounded corners */
     margin-bottom: 10px;
+
 }
 
 .member-name {
