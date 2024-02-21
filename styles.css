@@ -37,11 +37,20 @@ body {
     font-size: 24px;
 }
 
+.navbar .middle {
+    display: flex;
+    align-items: center;
+}
 
 .navbar .middle a {
     margin-right: 20px;
     text-decoration: none;
     color: inherit;
+}
+
+.navbar .right {
+    display: flex;
+    align-items: center;
 }
 
 .navbar .right button {
@@ -56,9 +65,35 @@ body {
     background-color: #333;
 }
 
+/* Brand name font size */
 .brand-name > p {
     font-size: 0.95rem;
+}
 
+/* Hamburger Menu Icon */
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1E1E1E;
+    margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar .left,
+    .navbar .middle,
+    .navbar .right {
+        display: none; 
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
 }
 /* Header styles */
 .header {
