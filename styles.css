@@ -1,0 +1,246 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Set Roboto as the default font */
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    height: 105px;
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0 20px;
+}
+
+.navbar .left img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar .left .brand-name {
+    font-size: 24px;
+}
+
+.navbar .middle a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .right button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .right button:hover {
+    background-color: #333;
+}
+
+/* Header styles */
+.header {
+    height: 735px;
+    background-image: url('images/chess_1.png');
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.header-content {
+    width: 640px;
+    height: 330px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-group {
+    text-align: left;
+}
+
+.header-text {
+    font-size: 48px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.header-button {
+    padding: 10px 20px;
+    background-color: #FFB703;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #FF9900;
+}
+
+/* Statistics group styles */
+.statistics-group {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    border: none;
+    height: 2px;
+    background-color: #E5E5E5;
+    margin: 0 10px;
+}
+
+.line-texts {
+    display: flex;
+}
+
+.line-texts span {
+    font-size: 16px;
+    color: #FFF;
+}
+
+/* About section styles */
+.about-section {
+    width: 1321px;
+    height: 678px;
+    margin: 20px auto; /* Center the section horizontally with a 20px margin */
+    background-color: #FFFFFF; /* White background */
+    color: #1E1E1E; /* Text color */
+    padding: 20px; /* Add padding inside the section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Top row section styles */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add space below the top row */
+}
+
+.top-row-text {
+    font-size: 24px; /* Font size for the top row text */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* About content styles */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-row-content {
+    width: 50%; /* Set width for the top row content */
+}
+
+.about-text {
+    font-size: 16px; /* Font size for the main text */
+}
+
+.about-image img {
+    width: 600px; /* Set width for the image */
+    height: 435px; /* Set height for the image */
+}
+
+/* Bottom row section styles */
+.bottom-row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bottom-row-text {
+    font-size: 16px;
+    font-weight: medium;
+    color: #1D2130;
+    margin-right: 20px; /* Add margin between text and line */
+}
+
+.line-1 {
+    width: 1094px;
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+/* Supporter logos styles */
+.supporter-logos {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.supporter-logo {
+    width: 223px; /* Adjusted width for niadelta.png */
+    height: 67px; /* Set height for consistency */
+    margin-right: 20px; /* Add margin between logos */
+}
+
+/* Team section styles */
+.team-section {
+    width: 1285px;
+    margin: 20px auto; /* Center the section horizontally with automatic left and right margins */
+    background-color: #FFFFFF; /* White background */
+    color: #1D2130; /* Text color */
+    padding: 20px; /* Add padding inside the section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.team-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1D2130;
+    margin-bottom: 20px; /* Add space below title */
+}
+
+.team-description {
+    font-size: 16px;
+    font-weight: normal;
+    color: #525560;
+}
+
+/* Team members styles */
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.member-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.member-role {
+    font-size: 14px;
+    color: #888;
+}
