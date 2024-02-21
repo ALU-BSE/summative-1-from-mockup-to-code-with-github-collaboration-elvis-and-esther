@@ -704,17 +704,19 @@ h3.month {
 
 /* Footer styles */
 .footer {
-    width: 1400px;
-    height: 395px;
+    max-width: 1400px;
+    height: auto;
     background-color: #FFFFFF;
     color: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap; 
 }
 
 .footer-left {
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -723,47 +725,43 @@ h3.month {
 .website-name {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 10px; 
+    margin-top: 10px;
     margin-left: 20px;
 }
 
 .footer-logo {
-    width: 190px;
-    height: 190px;
+    max-width: 100%;
+    height: auto;
     margin-top: 10px;
 }
 
-/* Footer styles */
 .footer-center {
-    width: 300px;
-    height: 35px;
+    flex: 1; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 .footer-center a {
-    display: inline-block; 
-    width: 35px; 
-    height: 30px; 
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .footer-center img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
-
 .footer-right {
-    width: 530px;
-    height: 200px;
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .subscribe-heading {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: bold;
     color: #1E1E1E;
 }
@@ -773,18 +771,21 @@ h3.month {
 }
 
 .email-input {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .subscribe-button {
     padding: 10px 20px;
     background-color: #FFB703;
-    color: 1D2130;
+    color: #1D2130;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
 }
