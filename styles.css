@@ -95,11 +95,9 @@ body {
         display: block; 
     }
 }
-/* Header styles */
 .header {
-    height: 735px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url('images/chess_1.png');
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/chess_1.png');
     background-size: cover;
     background-position: center;
     border-top: 1px solid #ccc;
@@ -107,17 +105,22 @@ body {
 }
 
 .header-content {
-    width: 640px;
-    height: 330px;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
     margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-group {
-    text-align: left;
+    text-align: center; 
 }
 
 .header-text {
@@ -127,11 +130,13 @@ body {
 }
 
 .header-button {
-    padding: 10px 20px;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
     background-color: #FFB703;
     color: #FFF;
     border: none;
     cursor: pointer;
+    margin-top: 3vw;
 }
 
 .header-button:hover {
@@ -140,29 +145,61 @@ body {
 
 /* Statistics group styles */
 .statistics-group {
-    position: absolute;
-    bottom: 100px;
-    left: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px; 
 }
 
 .line {
-    flex-grow: 1;
-    border: none;
-    height: 2px;
-    background-color: #E5E5E5;
-    margin: 0 10px;
+    border-top: 1px solid #E5E5E5;
+    width: 30%
 }
+
+.statistic {
+    font-size: 1.5vw;
+    color: #FFF;
+    width: calc(35% - 5px);
+}
+
 
 .line-texts {
     display: flex;
 }
 
 .line-texts span {
-    font-size: 16px;
+    font-size: 1.5vw; 
     color: #FFF;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .header-content {
+        width: 90%;
+    }
+    .header-button {
+        padding: 2vw 3vw;
+        font-size: 2.5vw;
+        margin-top: 5vw;
+    }
+    .header-text {
+        font-size: 4vw;
+    }
+    .header-button {
+        padding: 2vw 3vw;
+        font-size: 2.5vw;
+    }
+    .statistics-group {
+        bottom: 2vh;
+    }
+    .line {
+        height: 0.3vw;
+        margin: 0 1vw;
+    }
+    .line-texts span {
+        font-size: 2vw;
+    }
 }
 
 /* About section styles */
@@ -304,7 +341,6 @@ body {
 
 /* Team section styles */
 .team-section {
-    max-width: 1285px;
     margin: 0 auto; 
     background-color: #FFFFFF; 
     color: #1D2130; 
@@ -334,30 +370,26 @@ body {
 
 /* Team members styles */
 .team-members {
-    width: 1285px;
-    height: 433px;
+    width: 100%;
     margin: 20px auto; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: calc((100% - 1285px) / 2);
-    margin-bottom: 10px;
+    box-sizing: border-box;
 }
-
-/* Team member styles */
 .team-member {
     text-align: center;
     width: 302px; 
-    height: 400px; 
+    height: auto; 
     margin-bottom: 20px;
     padding: 0 10px;
-    box-sizing: border-box;
 }
 
 
 
 .member-image {
     width: 100%; 
+    max-width: 100%;
     height: auto; 
     object-fit: cover;
     border: 2px solid #000; 
