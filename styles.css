@@ -154,7 +154,9 @@ body {
 
 .line {
     border-top: 1px solid #E5E5E5;
-    width: 30%
+    width: 30%;
+    padding: 0;
+    margin: 0;
 }
 
 .statistic {
@@ -163,6 +165,9 @@ body {
     width: calc(35% - 5px);
 }
 
+.stats {
+    color: white;
+}
 
 .line-texts {
     display: flex;
@@ -504,9 +509,17 @@ i.fa-solid.fa-square, #five{
     }
 
     .piechart {
-        margin: 20px auto;
+        margin: 0 auto 20px;
         width: 180px;
         height: 180px;
+        position: relative;
+        top: 0;
+    }
+
+    .chart-icons {
+        display: flex;
+        flex-direction: column;
+        order: -1;
     }
 }
 
