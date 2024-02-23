@@ -1,4 +1,5 @@
-INFORMATION WEBSITE DESIGN
+                              INFORMATION WEBSITE DESIGN
+
                 Description.
 This project entails translating a Figma mock-up design into a fully functional web application using HTML and vanilla CSS while leveraging GitHub's collaboration and version control features. It is an information website for an organization called Pysch-64, which focuses on using chess to address mental health issues.
 
